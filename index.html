@@ -13,11 +13,12 @@
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     var rad = 10;
+    var maxSpeed = 6;
     var ball = [{xPos:rand(canvas.width-rad*2)+rad,
       yPos:rand(canvas.height-rad*2)+rad,
       rad:rad,
-      xVel:rand(5),
-      yVel:rand(5)}];
+      xVel:rand(maxSpeed),
+      yVel:rand(maxSpeed)}];
     var framerate = 1000/30;//40FPS
     var nBalls = 0;
     var date = new Date();
@@ -51,8 +52,8 @@
         ball[nBalls] = {xPos:rand(canvas.width-rad*2)+rad,
           yPos:rand(canvas.height-rad*2)+rad,
           rad:rad,
-          xVel:rand(5),
-          yVel:rand(5)};
+          xVel:rand(maxSpeed),
+          yVel:rand(maxSpeed)};
       }
       update();
     },framerate);
