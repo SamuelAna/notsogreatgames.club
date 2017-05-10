@@ -1,0 +1,13 @@
+body{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+}
+h1{
+  text-align: center;;
+}
+#canvas{
+border:1px solid black;
+border-radius:1%;
+}
