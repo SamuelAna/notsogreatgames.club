@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flood Clone</title>
+    <link rel="stylesheet" href="flood.css">
+  </head>
+  <body>
+    <div class = "content">
+      <div class="buttons">
+        <button id="red" onclick="redFunc()" class="btn"></button>
+        <button id="green" onclick="greenFunc()" class="btn"></button>
+        <button id="blue" onclick="blueFunc()" class="btn"></button>
+        <button id="purple" onclick="purpleFunc()" class="btn"></button>
+        <button id="yellow" onclick="yellowFunc()" class="btn"></button>
+      </div>
+
+      <canvas id="canvas" height="300px" width="300px" onmouseover="getMouseCoords(event)"></canvas>
+      <button id="newgame" onclick="start()" class="btn-start">Reset</button>
+    </div>
+    <script src="flood.js"></script>
+  </body>
+</html>
