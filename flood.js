@@ -78,23 +78,23 @@ function notInSolved(sol){
 }
 
 function redFunc(){
-  whereToDraw('red');
+  whereToDraw(colours[0]);
   draw(squares);
 }
 function greenFunc(){
-  whereToDraw('green');
+  whereToDraw(colours[1]));
   draw(squares);
 }
 function blueFunc(){
-  whereToDraw('blue');
+  whereToDraw(colours[2]));
   draw(squares);
 }
 function purpleFunc(){
-  whereToDraw('#ff00ee');
+  whereToDraw(colours[3]));
   draw(squares);
 }
 function yellowFunc(){
-  whereToDraw('yellow');
+  whereToDraw(colours[4]));
   draw(squares);
 }
 
